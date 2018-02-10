@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/</loc>
+    <lastmod>2017-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/getting-started/</loc>
+    <lastmod>2017-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/examples/</loc>
+    <lastmod>2017-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/instance-methods-properties-elements/</loc>
+    <lastmod>2017-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/events/</loc>
+    <lastmod>2017-03-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/options/</loc>
+    <lastmod>2017-03-03T20:23:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/formatting/</loc>
+    <lastmod>2017-03-03T20:23:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/localization/</loc>
+    <lastmod>2017-03-03T20:23:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/plugins/</loc>
+    <lastmod>2017-03-25T20:23:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/themes/</loc>
+    <lastmod>2017-04-09T20:23:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/mobile-support/</loc>
+    <lastmod>2017-04-23T20:23:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/ie9/</loc>
+    <lastmod>2017-04-23T20:23:43-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://flatpickr.github.io/flatpickr/updating-from-v2/</loc>
+    <lastmod>2017-04-23T20:23:43-05:00</lastmod>
+  </url>
+  
+</urlset>
