@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Getting Started - flatpickr</title>
-    <meta name="generator" content="Hugo 0.30" />
+    <meta name="generator" content="Hugo 0.54.0" />
 
     
     <meta name="description" content="A lightweight and powerful datetimepicker">
@@ -458,8 +458,8 @@
 <p>flatpickr is delivered primarily via npm.</p>
 
 <p>Bower users: please use <a href="https://www.npmjs.com/package/bower-npm-resolver">https://www.npmjs.com/package/bower-npm-resolver</a></p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#09f;font-style:italic"># using npm install
-</span><span style="color:#09f;font-style:italic"></span>npm i flatpickr --save</code></pre></div>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#09f;font-style:italic"># using npm install</span>
+npm i flatpickr --save</code></pre></div>
 <h3 id="non-module-environments">Non-module environments</h3>
 
 <p>If, for any reason, you are constained to a non-module environment (e.g. no bundlers such as webpack) - don&rsquo;t fret. I suggest simply pulling the latest version of <code>flatpickr</code> from <code>jsdelivr</code>.</p>
@@ -481,18 +481,20 @@
 </span><span style="color:#09f;font-style:italic"></span>flatpickr(<span style="color:#c30">&#34;#myID&#34;</span>, {});
 
 <span style="color:#09f;font-style:italic">// creates multiple instances
-</span><span style="color:#09f;font-style:italic"></span>flatpickr(<span style="color:#c30">&#34;.anotherSelector&#34;</span>);</code></pre></div>
+</span><span style="color:#09f;font-style:italic"></span>flatpickr(<span style="color:#c30">&#34;.anotherSelector&#34;</span>);
+</code></pre></div>
 <p>Configuration is optional and passed in an object <code>{}</code>.</p>
 
 <h3 id="jquery">jQuery</h3>
 
 <p>If you have jQuery, flatpickr is available as a plugin.
 Simply</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">$(<span style="color:#c30">&#34;.selector&#34;</span>).flatpickr(optional_config);</code></pre></div>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">$(<span style="color:#c30">&#34;.selector&#34;</span>).flatpickr(optional_config);
+</code></pre></div>
 
 			<aside class="copyright" role="note">
 				
-				&copy; 2018 Released under the MIT license
+				&copy; 2019 Released under the MIT license
 				
 				</aside>
 

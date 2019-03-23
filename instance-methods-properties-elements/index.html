@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>The flatpickr Instance - flatpickr</title>
-    <meta name="generator" content="Hugo 0.30" />
+    <meta name="generator" content="Hugo 0.54.0" />
 
     
     <meta name="description" content="A lightweight and powerful datetimepicker">
@@ -456,14 +456,18 @@
 <p>You may store the instance by assigning the result of an <a href="https://flatpickr.js.org/getting-started/#usage">invocation</a> to a variable.</p>
 
 <p>Here are a few ways to do it.</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#069;font-weight:bold">const</span> fp <span style="color:#555">=</span> flatpickr(<span style="color:#c30">&#34;#myID&#34;</span>, {}); <span style="color:#a00;background-color:#faa">// flatpickr</span></code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#069;font-weight:bold">const</span> myInput <span style="color:#555">=</span> <span style="color:#366">document</span>.querySelector(<span style="color:#c30">&#34;.myInput&#34;</span>);
-<span style="color:#069;font-weight:bold">const</span> fp <span style="color:#555">=</span> flatpickr(myInput, {});  <span style="color:#a00;background-color:#faa">// flatpickr</span></code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#069;font-weight:bold">const</span> calendars <span style="color:#555">=</span> flatpickr(<span style="color:#c30">&#34;.calendar&#34;</span>, {});
-calendars[<span style="color:#f60">0</span>] <span style="color:#a00;background-color:#faa">// flatpickr</span></code></pre></div>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#069;font-weight:bold">const</span> fp <span style="color:#555">=</span> flatpickr(<span style="color:#c30">&#34;#myID&#34;</span>, {}); <span style="color:#09f;font-style:italic">// flatpickr
+</span></code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#069;font-weight:bold">const</span> myInput <span style="color:#555">=</span> <span style="color:#366">document</span>.querySelector(<span style="color:#c30">&#34;.myInput&#34;</span>);
+<span style="color:#069;font-weight:bold">const</span> fp <span style="color:#555">=</span> flatpickr(myInput, {});  <span style="color:#09f;font-style:italic">// flatpickr
+</span></code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#069;font-weight:bold">const</span> calendars <span style="color:#555">=</span> flatpickr(<span style="color:#c30">&#34;.calendar&#34;</span>, {});
+calendars[<span style="color:#f60">0</span>] <span style="color:#09f;font-style:italic">// flatpickr
+</span></code></pre></div>
 <p>And if you&rsquo;ve forgot to save the instance to a variable</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">flatpickr(<span style="color:#c30">&#34;#myInput&#34;</span>, {}); <span style="color:#09f;font-style:italic">// invocation without saving to a var
 </span><span style="color:#09f;font-style:italic">// ...
 </span><span style="color:#09f;font-style:italic"></span>
-<span style="color:#069;font-weight:bold">const</span> fp <span style="color:#555">=</span> <span style="color:#366">document</span>.querySelector(<span style="color:#c30">&#34;#myInput&#34;</span>)._flatpickr;</code></pre></div>
+<span style="color:#069;font-weight:bold">const</span> fp <span style="color:#555">=</span> <span style="color:#366">document</span>.querySelector(<span style="color:#c30">&#34;#myInput&#34;</span>)._flatpickr;
+</code></pre></div>
 <h2 id="properties">Properties</h2>
 
 <p>Once you&rsquo;ve got the instance in say <code>fp</code>, accessing props is as simple as e.g. <code>fp.currentYear</code></p>
@@ -493,7 +497,8 @@ calendars[<span style="color:#f60">0</span>] <span style="color:#a00;background-
 calendar.changeMonth(<span style="color:#f60">1</span>); <span style="color:#09f;font-style:italic">// go a month ahead
 </span><span style="color:#09f;font-style:italic"></span>calendar.changeMonth(<span style="color:#555">-</span><span style="color:#f60">2</span>); <span style="color:#09f;font-style:italic">// go two months back
 </span><span style="color:#09f;font-style:italic"></span>
-calendar.changeMonth(<span style="color:#f60">0</span>, <span style="color:#069;font-weight:bold">false</span>); <span style="color:#a00;background-color:#faa">// go to January</span></code></pre></div>
+calendar.changeMonth(<span style="color:#f60">0</span>, <span style="color:#069;font-weight:bold">false</span>); <span style="color:#09f;font-style:italic">// go to January
+</span></code></pre></div>
 <h3 id="clear">clear()</h3>
 
 <p>Resets the selected dates (if any) and clears the input.</p>
@@ -578,7 +583,7 @@ And if you&rsquo;re passing a date string with a format other than your <code>da
 
 <h2 id="useful-static-methods">Useful static methods</h2>
 
-<p>flatpickr exposes its date parser and formatter which don&rsquo;t require an instance to work.</p>
+<p>flatpickr exposes its date parser and formatter which doesn&rsquo;t require an instance to work.</p>
 
 <p>While not as powerful as say <code>moment.js</code>, they&rsquo;re functional enough to replace it in most of the basic usecases.</p>
 
@@ -603,7 +608,7 @@ And if you&rsquo;re passing a date string with a format other than your <code>da
 
 			<aside class="copyright" role="note">
 				
-				&copy; 2018 Released under the MIT license
+				&copy; 2019 Released under the MIT license
 				
 				</aside>
 

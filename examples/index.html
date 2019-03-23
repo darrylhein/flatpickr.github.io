@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Examples - flatpickr</title>
-    <meta name="generator" content="Hugo 0.30" />
+    <meta name="generator" content="Hugo 0.54.0" />
 
     
     <meta name="description" content="A lightweight and powerful datetimepicker">
@@ -463,7 +463,8 @@
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     enableTime<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;Y-m-d H:i&#34;</span>,
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="datetime"></p>
 
 <h2 id="human-friendly-dates">Human-friendly Dates</h2>
@@ -477,7 +478,8 @@
     altInput<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
     altFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;F j, Y&#34;</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;Y-m-d&#34;</span>,
-}</code></pre></div>
+}
+</code></pre></div>
 <p>After selecting a date, inspect this input to see how it works.</p>
 
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="altinput"></p>
@@ -537,21 +539,25 @@
 <p><code>maxDate</code> option specifies the <strong>maximum/latest</strong> date (inclusively) allowed for selection.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     minDate<span style="color:#555">:</span> <span style="color:#c30">&#34;2020-01&#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="minDate"></p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;d.m.Y&#34;</span>,
     maxDate<span style="color:#555">:</span> <span style="color:#c30">&#34;15.12.2017&#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="maxDateStr"></p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     minDate<span style="color:#555">:</span> <span style="color:#c30">&#34;today&#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="minDateToday"></p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     minDate<span style="color:#555">:</span> <span style="color:#c30">&#34;today&#34;</span>,
     maxDate<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">new</span> <span style="color:#366">Date</span>().fp_incr(<span style="color:#f60">14</span>) <span style="color:#09f;font-style:italic">// 14 days from now
-</span><span style="color:#09f;font-style:italic"></span>}</code></pre></div>
+</span><span style="color:#09f;font-style:italic"></span>}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="minMaxDateTwoWeeks"></p>
 
 <h2 id="disabling-dates">Disabling dates</h2>
@@ -572,7 +578,8 @@
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     disable<span style="color:#555">:</span> [<span style="color:#c30">&#34;2025-01-30&#34;</span>, <span style="color:#c30">&#34;2025-02-21&#34;</span>, <span style="color:#c30">&#34;2025-03-08&#34;</span>, <span style="color:#069;font-weight:bold">new</span> <span style="color:#366">Date</span>(<span style="color:#f60">2025</span>, <span style="color:#f60">4</span>, <span style="color:#f60">9</span>) ],
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;Y-m-d&#34;</span>,
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="disableSpecific"></p>
 
 <hr />
@@ -590,7 +597,8 @@
             to<span style="color:#555">:</span> <span style="color:#c30">&#34;2025-12-01&#34;</span>
         }
     ]
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="disableRange"></p>
 
 <hr />
@@ -613,7 +621,8 @@ The example below disables Saturdays and Sundays.</p>
     <span style="color:#c30">&#34;locale&#34;</span><span style="color:#555">:</span> {
         <span style="color:#c30">&#34;firstDayOfWeek&#34;</span><span style="color:#555">:</span> <span style="color:#f60">1</span> <span style="color:#09f;font-style:italic">// start week on Monday
 </span><span style="color:#09f;font-style:italic"></span>    }
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="disableFunction"></p>
 
 <h2 id="disabling-all-dates-except-select-few">Disabling all dates except select few</h2>
@@ -623,7 +632,8 @@ The example below disables Saturdays and Sundays.</p>
 <h3 id="enabling-specific-dates">Enabling specific dates</h3>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     enable<span style="color:#555">:</span> [<span style="color:#c30">&#34;2025-03-30&#34;</span>, <span style="color:#c30">&#34;2025-05-21&#34;</span>, <span style="color:#c30">&#34;2025-06-08&#34;</span>, <span style="color:#069;font-weight:bold">new</span> <span style="color:#366">Date</span>(<span style="color:#f60">2025</span>, <span style="color:#f60">8</span>, <span style="color:#f60">9</span>) ]
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="enableSpecific"></p>
 
 <hr />
@@ -640,7 +650,8 @@ The example below disables Saturdays and Sundays.</p>
             to<span style="color:#555">:</span> <span style="color:#c30">&#34;2025-12-01&#34;</span>
         }
     ]
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="enableRange"></p>
 
 <hr />
@@ -655,7 +666,8 @@ The example below disables Saturdays and Sundays.</p>
 
         }
     ]
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="enableFunction"></p>
 
 <h2 id="selecting-multiple-dates">Selecting multiple dates</h2>
@@ -664,7 +676,8 @@ The example below disables Saturdays and Sundays.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     mode<span style="color:#555">:</span> <span style="color:#c30">&#34;multiple&#34;</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;Y-m-d&#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="multiple"></p>
 
 <h3 id="preloading-multiple-dates">Preloading multiple dates</h3>
@@ -672,7 +685,8 @@ The example below disables Saturdays and Sundays.</p>
     mode<span style="color:#555">:</span> <span style="color:#c30">&#34;multiple&#34;</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;Y-m-d&#34;</span>,
     defaultDate<span style="color:#555">:</span> [<span style="color:#c30">&#34;2016-10-20&#34;</span>, <span style="color:#c30">&#34;2016-11-04&#34;</span>]
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="multiplePreload"></p>
 
 <h3 id="customizing-the-conjunction">Customizing the Conjunction</h3>
@@ -680,7 +694,8 @@ The example below disables Saturdays and Sundays.</p>
     mode<span style="color:#555">:</span> <span style="color:#c30">&#34;multiple&#34;</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;Y-m-d&#34;</span>,
     conjunction<span style="color:#555">:</span> <span style="color:#c30">&#34; :: &#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="multipleCustomConjunction"></p>
 
 <h2 id="range-calendar">Range Calendar</h2>
@@ -688,7 +703,8 @@ The example below disables Saturdays and Sundays.</p>
 <p>Select a range of dates using the range calendar.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     mode<span style="color:#555">:</span> <span style="color:#c30">&#34;range&#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="range"></p>
 
 <p>Note that disabled dates (by either <code>minDate</code>, <code>maxDate</code>, <code>enable</code> or <code>disable</code>) will not be allowed in selections.</p>
@@ -702,7 +718,8 @@ The example below disables Saturdays and Sundays.</p>
 </span><span style="color:#09f;font-style:italic"></span>            <span style="color:#069;font-weight:bold">return</span> <span style="color:#555">!</span>(date.getDate() <span style="color:#555">%</span> <span style="color:#f60">8</span>);
         }
     ]
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="rangeDisable"></p>
 
 <h3 id="preloading-range-dates">Preloading range dates</h3>
@@ -710,7 +727,8 @@ The example below disables Saturdays and Sundays.</p>
     mode<span style="color:#555">:</span> <span style="color:#c30">&#34;range&#34;</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;Y-m-d&#34;</span>,
     defaultDate<span style="color:#555">:</span> [<span style="color:#c30">&#34;2016-10-10&#34;</span>, <span style="color:#c30">&#34;2016-10-20&#34;</span>]
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="rangePreload"></p>
 
 <h2 id="time-picker">Time Picker</h2>
@@ -718,7 +736,8 @@ The example below disables Saturdays and Sundays.</p>
     enableTime<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
     noCalendar<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;H:i&#34;</span>,
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="timePicker"></p>
 
 <h3 id="24-hour-time-picker">24-hour Time Picker</h3>
@@ -727,7 +746,8 @@ The example below disables Saturdays and Sundays.</p>
     noCalendar<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;H:i&#34;</span>,
     time_24hr<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="timePicker24"></p>
 
 <h3 id="time-picker-w-limits">Time Picker w/ Limits</h3>
@@ -737,7 +757,8 @@ The example below disables Saturdays and Sundays.</p>
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;H:i&#34;</span>,
     minDate<span style="color:#555">:</span> <span style="color:#c30">&#34;16:00&#34;</span>,
     maxDate<span style="color:#555">:</span> <span style="color:#c30">&#34;22:30&#34;</span>,
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="timePickerMinMaxHours"></p>
 
 <h3 id="preloading-time">Preloading Time</h3>
@@ -746,20 +767,23 @@ The example below disables Saturdays and Sundays.</p>
     noCalendar<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
     dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;H:i&#34;</span>,
     defaultDate<span style="color:#555">:</span> <span style="color:#c30">&#34;13:45&#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="timePickerPreloading"></p>
 
 <h2 id="datetimepicker-with-limited-time-range">DateTimePicker with Limited Time Range</h2>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     enableTime<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
     minTime<span style="color:#555">:</span> <span style="color:#c30">&#34;09:00&#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="minTime"></p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     enableTime<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
     minTime<span style="color:#555">:</span> <span style="color:#c30">&#34;16:00&#34;</span>,
     maxTime<span style="color:#555">:</span> <span style="color:#c30">&#34;22:00&#34;</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="minMaxTime"></p>
 
 <h2 id="inline-calendar">Inline Calendar</h2>
@@ -767,7 +791,8 @@ The example below disables Saturdays and Sundays.</p>
 <p>Display the calendar in an always-open state with the <code>inline</code> option.</p>
 <div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     inline<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="inline"></p>
 
 <h2 id="display-week-numbers">Display Week Numbers</h2>
@@ -785,7 +810,8 @@ The example below disables Saturdays and Sundays.</p>
     getWeek<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">function</span>(dateObj) {
         <span style="color:#09f;font-style:italic">// ...
 </span><span style="color:#09f;font-style:italic"></span>    }
-}</code></pre></div>
+}
+</code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="weekNumbers"></p>
 
 <h2 id="flatpickr-external-elements">flatpickr + external elements</h2>
@@ -793,7 +819,7 @@ The example below disables Saturdays and Sundays.</p>
 <p>flatpickr can parse an input group of textboxes and buttons, common in Bootstrap and other frameworks.</p>
 
 <p>This permits additional markup, as well as custom elements to trigger the state of the calendar.</p>
-<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">div</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">flatpickr</span>&gt;
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#309;font-weight:bold">div</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;flatpickr&#34;</span>&gt;
     &lt;<span style="color:#309;font-weight:bold">input</span> <span style="color:#309">type</span><span style="color:#555">=</span><span style="color:#c30">&#34;text&#34;</span> <span style="color:#309">placeholder</span><span style="color:#555">=</span><span style="color:#c30">&#34;Select Date..&#34;</span> <span style="color:#309">data-input</span>&gt; <span style="color:#09f;font-style:italic">&lt;!-- input is mandatory --&gt;</span>
 
     &lt;<span style="color:#309;font-weight:bold">a</span> <span style="color:#309">class</span><span style="color:#555">=</span><span style="color:#c30">&#34;input-button&#34;</span> <span style="color:#309">title</span><span style="color:#555">=</span><span style="color:#c30">&#34;toggle&#34;</span> <span style="color:#309">data-toggle</span>&gt;
@@ -805,7 +831,8 @@ The example below disables Saturdays and Sundays.</p>
     &lt;/<span style="color:#309;font-weight:bold">a</span>&gt;
 &lt;/<span style="color:#309;font-weight:bold">div</span>&gt;</code></pre></div><div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
     wrap<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
-}</code></pre></div>
+}
+</code></pre></div>
 <p class="flatpickr input-group" data-id="strap">
     <input type="text" placeholder="Select Date.." data-input>
 
@@ -821,7 +848,7 @@ The example below disables Saturdays and Sundays.</p>
 
 			<aside class="copyright" role="note">
 				
-				&copy; 2018 Released under the MIT license
+				&copy; 2019 Released under the MIT license
 				
 				</aside>
 

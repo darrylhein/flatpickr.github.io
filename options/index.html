@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Options - flatpickr</title>
-    <meta name="generator" content="Hugo 0.30" />
+    <meta name="generator" content="Hugo 0.54.0" />
 
     
     <meta name="description" content="A lightweight and powerful datetimepicker">
@@ -489,7 +489,7 @@
             <td>appendTo</td>
             <td>HTMLElement</td>
             <td>null</td>
-            <td>Instead of&nbsp;<code>body</code>, appends the calendar to the specified node instead.</td>
+            <td>Instead of&nbsp;<code>body</code>, appends the calendar to the specified node instead*.</td>
         </tr>
         <tr>
             <td>ariaDateFormat</td>
@@ -679,7 +679,7 @@
             <td>static</td>
             <td>Boolean</td>
             <td>false</td>
-            <td>Position the calendar inside the wrapper and next to the input element. (Leave <code>false</code> unless you know what you're doing.</td>
+            <td>Position the calendar inside the wrapper and next to the input element*.</td>
         </tr>
         <tr>
             <td>time_24hr</td>
@@ -704,10 +704,12 @@
     </tbody>
 </table>
 
+<p><small>* Attaching the calendar to a specific element makes it depend on that element&rsquo;s position and style. If the calendar is not positioned as expected, check the CSS rules of the container.</small></p>
+
 
 			<aside class="copyright" role="note">
 				
-				&copy; 2018 Released under the MIT license
+				&copy; 2019 Released under the MIT license
 				
 				</aside>
 

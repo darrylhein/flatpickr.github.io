@@ -6,7 +6,6 @@
     <description>Recent content in Introduction on flatpickr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Released under the MIT license</copyright>
     <lastBuildDate>Thu, 02 Feb 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://flatpickr.js.org/index.xml" rel="self" type="application/rss+xml" />
@@ -32,7 +31,7 @@ Bower users: please use https://www.npmjs.com/package/bower-npm-resolver
       <guid>https://flatpickr.js.org/examples/</guid>
       <description>Unless otherwise specified, the markup for examples below consists of just an input element, and flatpickr invocation with a given config.
 Basic flatpickr without any config.
-DateTime { enableTime: true, dateFormat: &amp;#34;Y-m-d H:i&amp;#34;, } Human-friendly Dates altInput hides your original input and creates a new one.
+DateTime { enableTime: true, dateFormat: &amp;#34;Y-m-d H:i&amp;#34;, }  Human-friendly Dates altInput hides your original input and creates a new one.
 Upon date selection, the original input will contain a Y-m-d... string, while the altInput will display the date in a more legible, customizable format.</description>
     </item>
     
@@ -44,7 +43,7 @@ Upon date selection, the original input will contain a Y-m-d... string, while th
       <guid>https://flatpickr.js.org/instance-methods-properties-elements/</guid>
       <description>Retrieving the flatpickr instance You may store the instance by assigning the result of an invocation to a variable.
 Here are a few ways to do it.
-const fp = flatpickr(&amp;#34;#myID&amp;#34;, {}); // flatpickrconst myInput = document.querySelector(&amp;#34;.myInput&amp;#34;); const fp = flatpickr(myInput, {}); // flatpickrconst calendars = flatpickr(&amp;#34;.calendar&amp;#34;, {}); calendars[0] // flatpickr And if you&amp;rsquo;ve forgot to save the instance to a variable
+const fp = flatpickr(&amp;#34;#myID&amp;#34;, {}); // flatpickr const myInput = document.querySelector(&amp;#34;.myInput&amp;#34;); const fp = flatpickr(myInput, {}); // flatpickr const calendars = flatpickr(&amp;#34;.calendar&amp;#34;, {}); calendars[0] // flatpickr  And if you&amp;rsquo;ve forgot to save the instance to a variable
 flatpickr(&amp;#34;#myInput&amp;#34;, {}); // invocation without saving to a var // .</description>
     </item>
     
@@ -76,7 +75,7 @@ dateStr is a string representation of the latest selected Date object by the us
       
       <guid>https://flatpickr.js.org/formatting/</guid>
       <description>Each character in the table below can be used in dateFormat and altFormat options to achieve the format you need.
-Date Formatting Tokens    Character Description Example     d Day of the month, 2 digits with leading zeros 01 to 31   D A textual representation of a day Mon through Sun   l (lowercase &#39;L&#39;) A full textual representation of the day of the week Sunday through Saturday   j Day of the month without leading zeros 1 to 31   J Day of the month without leading zeros and ordinal suffix 1st, 2nd, to 31st   w Numeric representation of the day of the week 0 (for Sunday) through 6 (for Saturday)   F A full textual representation of a month January through December   m Numeric representation of a month, with leading zero 01 through 12   n Numeric representation of a month, without leading zeros 1 through 12   M A short textual representation of a month Jan through Dec   U The number of seconds since the Unix Epoch 1413704993   y A two digit representation of a year 99 or 03   Y A full numeric representation of a year, 4 digits 1999 or 2003   Z ISO Date format 2017-03-04T01:23:43.</description>
+Date Formatting Tokens    Character Description Example     d Day of the month, 2 digits with leading zeros 01 to 31   D A textual representation of a day Mon through Sun   l (lowercase &#39;L&#39;) A full textual representation of the day of the week Sunday through Saturday   j Day of the month without leading zeros 1 to 31   J Day of the month without leading zeros and ordinal suffix 1st, 2nd, to 31st   w Numeric representation of the day of the week 0 (for Sunday) through 6 (for Saturday)   W Numeric representation of the week 0 (first week of the year) through 52 (last week of the year)   F A full textual representation of a month January through December   m Numeric representation of a month, with leading zero 01 through 12   n Numeric representation of a month, without leading zeros 1 through 12   M A short textual representation of a month Jan through Dec   U The number of seconds since the Unix Epoch 1413704993   y A two digit representation of a year 99 or 03   Y A full numeric representation of a year, 4 digits 1999 or 2003   Z ISO Date format 2017-03-04T01:23:43.</description>
     </item>
     
     <item>
@@ -88,8 +87,8 @@ Date Formatting Tokens    Character Description Example     d Day of the month, 
       <description>Dozens of locales are available.
 flatpickr can be localized per-instance, or globally.
 Using Modules ES modules (if your environment supports it)
-import flatpickr from &amp;#34;flatpickr&amp;#34; import { Russian } from &amp;#34;flatpickr/dist/l10n/ru.js&amp;#34; flatpickr(myElem, { &amp;#34;locale&amp;#34;: Russian // locale for this instance only }); Using plain require()
-const flatpickr = require(&amp;#34;flatpickr&amp;#34;); const Russian = require(&amp;#34;flatpickr/dist/l10n/ru.js&amp;#34;).default.ru; flatpickr(myElem, { &amp;#34;locale&amp;#34;: Russian // locale for this instance only }); Localize globally (for all instances):</description>
+import flatpickr from &amp;#34;flatpickr&amp;#34; import { Russian } from &amp;#34;flatpickr/dist/l10n/ru.js&amp;#34; flatpickr(myElem, { &amp;#34;locale&amp;#34;: Russian // locale for this instance only });  Using plain require()
+const flatpickr = require(&amp;#34;flatpickr&amp;#34;); const Russian = require(&amp;#34;flatpickr/dist/l10n/ru.js&amp;#34;).default.ru; flatpickr(myElem, { &amp;#34;locale&amp;#34;: Russian // locale for this instance only });  Localize globally (for all instances):</description>
     </item>
     
     <item>
@@ -101,7 +100,7 @@ const flatpickr = require(&amp;#34;flatpickr&amp;#34;); const Russian = require(
       <description>Plugins are essentially a set of hooks, that receive an optional config object and a flatpickr instance.
 Functionality requested by users that doesn&amp;rsquo;t make it to core usually ends up in a plugin. The flatpickr repo comes with a few plugins.
 confirmDate Provides a visual cue for users after selecting either:
- date + time multiple dates  { &amp;#34;enableTime&amp;#34;: true, &amp;#34;plugins&amp;#34;: [new confirmDatePlugin({})] } A spiffy SVG icon is included, along with sane defaults, but you can customize them.</description>
+ date + time multiple dates  { &amp;#34;enableTime&amp;#34;: true, &amp;#34;plugins&amp;#34;: [new confirmDatePlugin({})] }  A spiffy SVG icon is included, along with sane defaults, but you can customize them.</description>
     </item>
     
     <item>
@@ -113,7 +112,7 @@ confirmDate Provides a visual cue for users after selecting either:
       <description>Select Theme: Default 
  Usage To use a theme of your choice, simply load its corresponding CSS file.
 For webpack builds and similar, you&amp;rsquo;d do something like:
-require(&amp;#34;flatpickr/dist/themes/dark.css&amp;#34;); Themes in browser environments Otherwise, if you&amp;rsquo;re constrained to a browser, just link the CSS file as a regular stylesheet.
+require(&amp;#34;flatpickr/dist/themes/dark.css&amp;#34;);  Themes in browser environments Otherwise, if you&amp;rsquo;re constrained to a browser, just link the CSS file as a regular stylesheet.
 &amp;lt;link rel=&amp;#34;stylesheet&amp;#34; type=&amp;#34;text/css&amp;#34; href=&amp;#34;https://npmcdn.com/flatpickr/dist/themes/dark.css&amp;#34;&amp;gt; Available Themes Available theme names are listed in the theme selector on top of the page.</description>
     </item>
     
