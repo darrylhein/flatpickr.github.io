@@ -453,13 +453,23 @@
 
 <h2 id="events">Events</h2>
 
-<p>flatpickr has 5 event hooks for the most common and useful actions. For each hook, you may specify a single function, or an array of functions. Callback arguments are explained below.</p>
+<p>flatpickr features event hooks for the most common and useful actions. For each hook, you may specify a single function, or an array of functions.</p>
 
-<p><code>selectedDates</code> is an array of Date objects selected by the user. When there are no dates selected, the array is empty.</p>
+<blockquote>
+<p>After instantiation, all hooks can be accessed via the instance&rsquo;s config object. Inside the object, all functions are stored in arrays, so you would need to manipulate the array itself to add or remove functions:</p>
 
-<p><code>dateStr</code> is a string representation of the latest selected Date object by the user. The string is formatted as per the<code>dateFormat</code>option.</p>
+<p>Example: <code>instance.config.onChange.push(function() { } );</code></p>
+</blockquote>
 
-<p><code>instance</code> is the flatpickr object, containing various methods and properties.</p>
+<p>Each function added to a hook will receive 3 arguments when called. These are:</p>
+
+<ol>
+<li><p><code>selectedDates</code> - an array of Date objects selected by the user. When there are no dates selected, the array is empty.</p></li>
+
+<li><p><code>dateStr</code> - a string representation of the latest selected Date object by the user. The string is formatted as per the <code>dateFormat</code> option.</p></li>
+
+<li><p><code>instance</code> - the flatpickr object, containing various methods and properties.</p></li>
+</ol>
 
 <h2 id="hooks">Hooks</h2>
 

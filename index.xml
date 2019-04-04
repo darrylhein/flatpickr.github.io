@@ -53,9 +53,10 @@ flatpickr(&amp;#34;#myInput&amp;#34;, {}); // invocation without saving to a var
       <pubDate>Fri, 03 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://flatpickr.js.org/events/</guid>
-      <description>Events flatpickr has 5 event hooks for the most common and useful actions. For each hook, you may specify a single function, or an array of functions. Callback arguments are explained below.
-selectedDates is an array of Date objects selected by the user. When there are no dates selected, the array is empty.
-dateStr is a string representation of the latest selected Date object by the user. The string is formatted as per thedateFormatoption.</description>
+      <description>Events flatpickr features event hooks for the most common and useful actions. For each hook, you may specify a single function, or an array of functions.
+ After instantiation, all hooks can be accessed via the instance&amp;rsquo;s config object. Inside the object, all functions are stored in arrays, so you would need to manipulate the array itself to add or remove functions:
+Example: instance.config.onChange.push(function() { } );
+ Each function added to a hook will receive 3 arguments when called.</description>
     </item>
     
     <item>
