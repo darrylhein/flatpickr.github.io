@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Plugins - flatpickr</title>
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.55.0" />
 
     
     <meta name="description" content="A lightweight and powerful datetimepicker">
@@ -71,6 +71,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/flatpickr.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/confirmDate/confirmDate.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/monthSelect/style.css">
     
 
     <script src="https://flatpickr.js.org/javascripts/modernizr.js"></script>
@@ -534,6 +536,22 @@
 </code></pre></div>
 <p><input class=flatpickr type="text" placeholder="Select Date.." data-id="minMaxTimePlugin"></p>
 
+<h2 id="monthselectplugin"><code>monthSelectPlugin</code></h2>
+
+<p>Show a month-only calendar view</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+    plugins<span style="color:#555">:</span> [
+        <span style="color:#069;font-weight:bold">new</span> monthSelectPlugin({
+          shorthand<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>, <span style="color:#09f;font-style:italic">//defaults to false
+</span><span style="color:#09f;font-style:italic"></span>          dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;m.y&#34;</span>, <span style="color:#09f;font-style:italic">//defaults to &#34;F Y&#34;
+</span><span style="color:#09f;font-style:italic"></span>          altFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;F Y&#34;</span>, <span style="color:#09f;font-style:italic">//defaults to &#34;F Y&#34;
+</span><span style="color:#09f;font-style:italic"></span>          theme<span style="color:#555">:</span> <span style="color:#c30">&#34;dark&#34;</span> <span style="color:#09f;font-style:italic">// defaults to &#34;light&#34;
+</span><span style="color:#09f;font-style:italic"></span>        })
+    ]
+};
+</code></pre></div>
+<p><input class=flatpickr type="text" placeholder="Select Date.." data-id="monthSelectPlugin"></p>
+
 
 			<aside class="copyright" role="note">
 				
@@ -547,7 +565,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://flatpickr.js.org/localization/" title="Localization">
+      <a href="https://flatpickr.js.org/themes/" title="Themes">
         <span class="direction">
           Previous
         </span>
@@ -557,7 +575,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              Localization
+              Themes
             </div>
           </div>
         </div>
@@ -568,14 +586,14 @@
   <div class="next">
 
   
-      <a href="https://flatpickr.js.org/themes/" title="Themes">
+      <a href="https://flatpickr.js.org/localization/" title="Localization">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Themes
+              Localization
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
@@ -625,6 +643,8 @@
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/rangePlugin.js"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/minMaxTimePlugin.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/monthSelect/index.js"></script>
     
     <script src="https://flatpickr.js.org/flatpickr.js"></script>
     
