@@ -614,7 +614,7 @@ The example below disables Saturdays and Sundays.</p>
     <span style="color:#c30">&#34;disable&#34;</span><span style="color:#555">:</span> [
         <span style="color:#069;font-weight:bold">function</span>(date) {
             <span style="color:#09f;font-style:italic">// return true to disable
-</span><span style="color:#09f;font-style:italic"></span>            <span style="color:#069;font-weight:bold">return</span> (date.getDay() <span style="color:#555">===</span> <span style="color:#f60">5</span> <span style="color:#555">||</span> date.getDay() <span style="color:#555">===</span> <span style="color:#f60">6</span>);
+</span><span style="color:#09f;font-style:italic"></span>            <span style="color:#069;font-weight:bold">return</span> (date.getDay() <span style="color:#555">===</span> <span style="color:#f60">0</span> <span style="color:#555">||</span> date.getDay() <span style="color:#555">===</span> <span style="color:#f60">6</span>);
 
         }
     ],
