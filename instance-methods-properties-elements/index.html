@@ -520,11 +520,13 @@ calendar.changeMonth(<span style="color:#f60">0</span>, <span style="color:#069;
 <p><strong>Return Value</strong>
 A string representation of<code>dateObj</code>,  formatted as per <code>formatStr</code></p>
 
-<h3 id="jumptodate-date">jumpToDate(date)</h3>
+<h3 id="jumptodate-date-triggerchange">jumpToDate(date, triggerChange)</h3>
 
 <p>Sets the calendar view to the year and month of <code>date</code>, which can be a date string, a Date, or nothing.</p>
 
 <p>If<code>date</code>is undefined, the view is set to the latest selected date, the <code>minDate</code>, or today&rsquo;s date</p>
+
+<p>If <code>triggerChange</code> is set to <code>true</code>, the <code>onMonthChange</code> and <code>onYearChange</code> hooks are triggered, but only if the new values differ.</p>
 
 <h3 id="open">open()</h3>
 
