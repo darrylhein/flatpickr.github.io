@@ -849,6 +849,23 @@ The example below disables Saturdays and Sundays.</p>
     </a>
 </p>
 
+<h2 id="custom-parsing-and-formating">Custom parsing and formating</h2>
+
+<p>Customize date parsing and formating e.g. to support custom formatting tokens.</p>
+<div class="highlight"><pre style="background-color:#f0f3f3;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">{
+  altInput<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+  dateFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;YYYY-MM-DD&#34;</span>,
+  altFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;DD-MM-YYYY&#34;</span>,
+  allowInput<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
+  parseDate<span style="color:#555">:</span> (datestr, format) =&gt; {
+  	<span style="color:#069;font-weight:bold">return</span> moment(datestr, format, <span style="color:#069;font-weight:bold">true</span>).toDate();
+  },
+  formatDate<span style="color:#555">:</span> (date, format, locale) =&gt; {
+  	<span style="color:#09f;font-style:italic">// locale can also be used
+</span><span style="color:#09f;font-style:italic"></span>  	<span style="color:#069;font-weight:bold">return</span> moment(date).format(format);
+  }
+}
+</code></pre></div>
 
 			<aside class="copyright" role="note">
 				
