@@ -68,11 +68,11 @@
     
     <link rel="stylesheet" href="https://flatpickr.js.org/site.css">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/flatpickr.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.css">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/confirmDate/confirmDate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/confirmDate/confirmDate.css">
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/monthSelect/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css">
     
 
     <script src="https://flatpickr.js.org/javascripts/modernizr.js"></script>
@@ -835,18 +835,18 @@ The example below disables Saturdays and Sundays.</p>
     wrap<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>
 }
 </code></pre></div>
-<p>Note that the selector for flatpicker should be the wrapping div with class <code>flatpickr</code> not the <code>input</code> tag.</p>
+<p>Note that the selector for flatpickr should be the wrapping div with class <code>flatpickr</code> not the <code>input</code> tag.</p>
 
 <p class="flatpickr input-group" data-id="strap">
-    <input type="text" placeholder="Select Date.." data-input>
+<input type="text" placeholder="Select Date.." data-input>
 
-    <a class="input-button" style="fill:#444" title="toggle" data-toggle>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M14 2v-1h-3v1h-5v-1h-3v1h-3v15h17v-15h-3zM12 2h1v2h-1v-2zM4 2h1v2h-1v-2zM16 16h-15v-8.921h15v8.921zM1 6.079v-3.079h2v2h3v-2h5v2h3v-2h2v3.079h-15z" fill="#000000" /></svg>
-    </a>
+<a class="input-button" style="fill:#444" title="toggle" data-toggle>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M14 2v-1h-3v1h-5v-1h-3v1h-3v15h17v-15h-3zM12 2h1v2h-1v-2zM4 2h1v2h-1v-2zM16 16h-15v-8.921h15v8.921zM1 6.079v-3.079h2v2h3v-2h5v2h3v-2h2v3.079h-15z" fill="#000000" /></svg>
+</a>
 
-    <a class="input-button color-danger" title="clear" data-clear>
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z" fill="#000000" /></svg>
-    </a>
+<a class="input-button color-danger" title="clear" data-clear>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17"><g></g><path d="M9.207 8.5l6.646 6.646-0.707 0.707-6.646-6.646-6.646 6.646-0.707-0.707 6.646-6.646-6.647-6.646 0.707-0.707 6.647 6.646 6.646-6.646 0.707 0.707-6.646 6.646z" fill="#000000" /></svg>
+</a>
 </p>
 
 <h2 id="custom-parsing-and-formating">Custom parsing and formating</h2>
@@ -858,11 +858,11 @@ The example below disables Saturdays and Sundays.</p>
   altFormat<span style="color:#555">:</span> <span style="color:#c30">&#34;DD-MM-YYYY&#34;</span>,
   allowInput<span style="color:#555">:</span> <span style="color:#069;font-weight:bold">true</span>,
   parseDate<span style="color:#555">:</span> (datestr, format) =&gt; {
-  	<span style="color:#069;font-weight:bold">return</span> moment(datestr, format, <span style="color:#069;font-weight:bold">true</span>).toDate();
+    <span style="color:#069;font-weight:bold">return</span> moment(datestr, format, <span style="color:#069;font-weight:bold">true</span>).toDate();
   },
   formatDate<span style="color:#555">:</span> (date, format, locale) =&gt; {
-  	<span style="color:#09f;font-style:italic">// locale can also be used
-</span><span style="color:#09f;font-style:italic"></span>  	<span style="color:#069;font-weight:bold">return</span> moment(date).format(format);
+    <span style="color:#09f;font-style:italic">// locale can also be used
+</span><span style="color:#09f;font-style:italic"></span>    <span style="color:#069;font-weight:bold">return</span> moment(date).format(format);
   }
 }
 </code></pre></div>
@@ -948,17 +948,17 @@ The example below disables Saturdays and Sundays.</p>
     
     <script src="https://flatpickr.js.org/init.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/flatpickr.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/confirmDate/confirmDate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/confirmDate/confirmDate.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/weekSelect/weekSelect.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/weekSelect/weekSelect.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/rangePlugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/rangePlugin.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/minMaxTimePlugin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/minMaxTimePlugin.js"></script>
     
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/monthSelect/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/index.js"></script>
     
     <script src="https://flatpickr.js.org/flatpickr.js"></script>
     
